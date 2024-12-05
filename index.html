@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo-container">
+                <div class="logo">
+                    <div class="rays-container"></div>
+                    <div class="center-circle"></div>
+                    <div class="ring"></div>
+                    <div class="black-circle"></div>
+                </div>
+                <span class="logo-text">Inner Foundation</span>
+            </a>
+            <button class="theme-toggle" onclick="toggleTheme()"></button>
+        </nav>
+
+        <header>
+            <h1>1-ON-1 COACHING<br>FOR CRYPTO FOUNDERS ∧ ENGINEERS</h1>
+            <p><a href="https://telegram.me/monicazng" class="primary-link">START NOW →</a></p>
+        </header>
+
+        <main>
+            <p>We've been in crypto since 2017. We've seen people burnout, get lost, and leave. Founders and engineers without foundations crumble.</p>
+
+            <p>But we've seen the opposite too. Founders who turn vague anxieties into concrete problems. Who move from scattered efforts to focused action. Who build confidence through structured thinking. Who lead intentionally, not just reactively.</p>
+
+            <p>As they've navigated fundraises, transitions, and complex situations, we've been there. We've walked alongside them through deep uncertainties and team challenges, toward their most ambitious goals. </p>
+
+            <p>Strong foundations can be built. Inner Foundation exists to cultivate them. Your coach is your sounding board, your thinking partner, and your real-time companion.</p>
+
+            <p class="approach-text">Our approach blends:</p>
+            <ul>
+                <li>Deep crypto experience</li>
+                <li>Proven coaching techniques</li>
+                <li>Practical psychology and systems thinking</li>
+            </ul>
+
+            <div class="cta-section">
+                <p>CLARITY OF THOUGHT IS THE FOUNDATION OF ACTION<br>
+                <a href="https://telegram.me/monicazng" class="primary-link">MEET YOUR COACH →</a></p>
+                <p><a href="./testimonials.html" class="secondary-link">Read testimonials</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright © 2024</p>
+            <div class="footer-links">
+                <a href="mailto:moni@inner.foundation" class="primary-link">EMAIL</a> /
+                <a href="https://status.app/u/G1sAAATCbSWL0ZAumSxZMFptwo_xwT1snwQnHLA3kDgNNCA7ysFDNqUIZ6pLXjmde03L7J_ra0ooc_R6gv0zzMSBa2OzbPm5CTFXGEc8qLQW8QA=#zQ3shsxV5ExQQkoUL7Vsq6uasTozTfnCYV6d4raFNcduzUEwN" class="primary-link">STATUS</a> /
+                <a href="https://telegram.me/monicazng" class="primary-link">TG</a> /
+                <a href="https://x.com/inner_fdn" class="primary-link">X</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Check theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+        });
+
+        // Create the sunburst rays
+        const raysContainer = document.querySelector('.rays-container');
+        for (let i = 0; i < 24; i++) {
+            const line = document.createElement('div');
+            line.className = 'line';
+            line.style.transform = `translate(-0%, -50%) rotate(${i * 15}deg)`;
+            raysContainer.appendChild(line);
+        }
+    </script>
+</body>
+</html>
