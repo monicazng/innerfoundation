@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Testimonials - Inner Foundation</title>
+    <meta name="title" content="Testimonials - Inner Foundation">
+    <meta name="description" content="She helped me identify hidden patterns, what was holding me back and guided me through concrete steps to achieve my goals.">
+    <meta name="keywords" content="testimonials, founder coaching, crypto founders, coaching">
+     
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://inner.foundation/testimonials">
+    <meta property="twitter:title" content="Testimonials - Inner Foundation">
+    <meta property="twitter:description" content="She helped me identify hidden patterns, what was holding me back and guided me through concrete steps to achieve my goals.">
+    <!-- TODO <meta property="twitter:image" content=""> -->
+
+    <link rel="icon" href="favicon.png">
+    <link rel="canonical" href="https://inner.foundation/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo-container">
+                <div class="logo">
+                    <div class="rays-container"></div>
+                    <div class="center-circle"></div>
+                    <div class="ring"></div>
+                    <div class="black-circle"></div>
+                </div>
+                <span class="logo-text">Inner Foundation</span>
+            </a>
+            <button class="theme-toggle" onclick="toggleTheme()"></button>
+        </nav>
+
+        <header>
+            <p class="header-quote"><strong>CLARITY OF THOUGHT IS THE FOUNDATION OF ACTION</strong><br>
+            <a href="https://telegram.me/monicazng" class="primary-link">MEET YOUR COACH →</a></p>
+        </header>
+
+        <main>
+            <h2>Testimonials</h2>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"Coaching is probably the highest mid-term ROI investment for the organization and yourself. With Monica, I discovered hidden patterns that were limiting my professional growth. Once we solved them, I felt liberated and the growth has been spectacular."</p>
+                <p class="testimonial-author">–Daniel, Founder & Angel Investor</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"I felt stuck and unproductive until Monica helped me unlock it. She helped me identify what was holding me back and guided me through concrete steps to achieve my goals. The transformation was immediate."</p>
+                <p class="testimonial-author">–Luis, Founder & CTO</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"Monica became an indispensable companion with whom I could trust, challenge, be challenged and reflect upon from fresh perspectives. She continually re-understand situation to stay effective in widening my awareness and bringing clarity to new situations."</p>
+                <p class="testimonial-author">–Brett, Investor & CTO</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"I was skeptical about coaching at first. Working with Monica felt like having someone search alongside me, helping me find the exact friction points in my performance. Together we achieved real, measurable progress."</p>
+                <p class="testimonial-author">–Alex, Tech Lead</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"As an independent founder, I was hesitant to seek help until I discovered Moni's Magic. She has been more than just a coach; she's become a trusted person and an invaluable advisor. Something I'm extremely grateful for is how Moni is always available, her async feedback helps me tackle challenges in real-time, exactly when I need it. Her support has been instrumental in my journey."</p>
+                <p class="testimonial-author">–Sara, Founder & Instructor</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"Sessions with Monica are like seeds, as you plant them, dedicate time, and water them, they grow over time. Thanks to Monica's guidance, I have learned to identify what I truly need, how to achieve it, and what deserves my focus."</p>
+                <p class="testimonial-author">–Ana, Data Scientist</p>
+            </div>
+
+            <div class="book-session">
+                <a href="https://telegram.me/monicazng" class="primary-link">BOOK YOUR FIRST SESSION →</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright © 2024</p>
+            <div class="footer-links">
+                <a href="mailto:moni@inner.foundation" class="primary-link">EMAIL</a> /
+                <a href="https://status.app/u/G1sAAATCbSWL0ZAumSxZMFptwo_xwT1snwQnHLA3kDgNNCA7ysFDNqUIZ6pLXjmde03L7J_ra0ooc_R6gv0zzMSBa2OzbPm5CTFXGEc8qLQW8QA=#zQ3shsxV5ExQQkoUL7Vsq6uasTozTfnCYV6d4raFNcduzUEwN" class="primary-link">STATUS</a> /
+                <a href="https://telegram.me/monicazng" class="primary-link">TG</a> /
+                <a href="https://x.com/inner_fdn" class="primary-link">X</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Check theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+        });
+
+        // Theme toggle functionality (if you have a theme toggle button on this page)
+        function toggleTheme() {
+            const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Create the sunburst rays
+        const raysContainer = document.querySelector('.rays-container');
+        for (let i = 0; i < 24; i++) {
+            const line = document.createElement('div');
+            line.className = 'line';
+            line.style.transform = `translate(-0%, -50%) rotate(${i * 15}deg)`;
+            raysContainer.appendChild(line);
+        }
+    </script>
+</body>
+</html>
