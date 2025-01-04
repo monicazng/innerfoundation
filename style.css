@@ -10,7 +10,6 @@
 :root {
     --background: #0E0E0E;
     --text: #F9EFE6;
-    --link: #FF5900;
     --highlight: #ffbb00;
     --max-width: 700px;
     --spacing: 1.5rem;
@@ -29,7 +28,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--background);
     color: var(--text);
     line-height: 1.5;
@@ -100,7 +99,7 @@ body {
     font-size: var(--logo-size);
     font-weight: 500;
     color: var(--text);
-    font-family: serif;
+    font-family: Garamond, serif;
     line-height: 1;
 }
 
@@ -125,8 +124,8 @@ nav {
 
 .theme-toggle {
     background: none;
+    color: var(--text);
     border: none; 
-    color: var(--link);
     font-size: 1.25rem;
     padding: 0;
     width: 1rem;
@@ -158,13 +157,13 @@ header {
     display: flex; 
     flex-direction: column; 
     padding: var(--spacing) 0; 
-    text-align: center;
 }
 
 h1 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    font-family: Garamond, serif;
 }
 
 p {
@@ -177,7 +176,6 @@ ul {
 }
 
 ul li {
-    /* margin-bottom: 0.5rem; */
     padding-left: 1rem;
     position: relative;
 }
@@ -188,18 +186,27 @@ ul li::before {
     left: 0;
 }
 
+.section {
+    margin-bottom: var(--spacing);
+}
+
 .cta-section {
     margin-top: calc(var(--spacing) * 1.5);
 }
 
 a {
-    color: var(--link);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text);
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
 
 .primary-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #FF5900;
     background: linear-gradient(
         to right,
@@ -228,12 +235,11 @@ a {
 }
 
 footer {
-    text-align: center;
-    padding: calc(var(--spacing) * 2) 0;
+    padding: var(--spacing) 0;
 }
 
 .footer-links a {
-    padding: 0 0.5rem;
+    padding-right: var(--spacing);
     margin-bottom: var(--spacing);
 }
 
