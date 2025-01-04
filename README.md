@@ -1,6 +1,6 @@
 # Inner Foundation
 
-Welcome to the official repository for Inner Foundation's website. Inner Foundation provides 1-on-1 coaching for founders and engineers in crypto. We help them develop stronger foundations to navigate the inherit challenges of building and scaling projects. Our approach blends our experience in crypto, proven coaching techniques, practical psychology, and systems thinking.
+Welcome to the official repository for Inner Foundation's website. Inner Foundation provides 1-on-1 coaching for founders and engineers in crypto. We help them develop emotional, personal, and operational excellence to navigate the inherent challenges of building and scaling projects. Our approach blends deep crypto experience, proven coaching techniques, practical psychology, and systems thinking.
 
 ## Overview
 
