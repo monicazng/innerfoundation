@@ -11,7 +11,7 @@
     --background: #0E0E0E;
     --text: #F9EFE6;
     --highlight: #ffbb00;
-    --max-width: 700px;
+    --max-width: 800px;
     --spacing: 1.5rem;
     --logo-size: 1.75rem;
 }
@@ -69,9 +69,9 @@ body {
 }
 
 .ring {
-    width: calc(var(--logo-size) * 0.66);
-    height: calc(var(--logo-size) * 0.66);
-    border: calc(var(--logo-size) * 0.1) solid var(--background);
+    width: calc(var(--logo-size) * 0.75);
+    height: calc(var(--logo-size) * 0.75);
+    border: calc(var(--logo-size) * 0.12) solid var(--background);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -120,6 +120,7 @@ nav {
 .nav-right {
     display: flex;
     align-items: center;
+    gap: var(--spacing);
 }
 
 .theme-toggle {
@@ -234,6 +235,13 @@ a {
     margin-bottom: var(--spacing);
 }
 
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: var(--spacing);
+}
+
 footer {
     padding: var(--spacing) 0;
 }
@@ -241,18 +249,4 @@ footer {
 .footer-links a {
     padding-right: var(--spacing);
     margin-bottom: var(--spacing);
-}
-
-@media (max-width: 650px) {
-    :root {
-        --logo-size: 1.8rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    .container {
-        padding: 0 var(--spacing);
-    }
 }
