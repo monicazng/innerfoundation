@@ -69,9 +69,9 @@ body {
 }
 
 .ring {
-    width: calc(var(--logo-size) * 0.75);
-    height: calc(var(--logo-size) * 0.75);
-    border: calc(var(--logo-size) * 0.12) solid var(--background);
+    width: calc(var(--logo-size) * 0.85);
+    height: calc(var(--logo-size) * 0.85);
+    border: calc(var(--logo-size) * 0.1) solid var(--background);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -236,10 +236,7 @@ a {
 }
 
 .column {
-    display: flex;
-    flex-wrap: wrap;
     flex: 1;
-    gap: var(--spacing);
 }
 
 footer {
@@ -249,4 +246,10 @@ footer {
 .footer-links a {
     padding-right: var(--spacing);
     margin-bottom: var(--spacing);
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
 }
