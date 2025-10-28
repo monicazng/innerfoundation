@@ -33,7 +33,7 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <a href="t.me/monicazng" class="primary-link">Escríbenos</a>
+                <a href="https://t.me/monicazng" class="primary-link">Escríbenos</a>
                 <button class="theme-toggle" onclick="toggleTheme()"></button>
             </div>
         </nav>
@@ -150,9 +150,9 @@
 
             <p><em>Gracias a Alberto, Álvaro y Jorge por leer los primeros borradores.</em></p>
             
-            <p><em>Gracias a ti por leer este ensayo. Este contenido es público, así que puedes compartirlo libremente con quien le pueda interesar. Si quieres que te envíe directamente futuros ensayos, puedes dejarme tu correo electrónico a continuación.</em></p>
+            <p><em>Gracias por leer este ensayo. Este contenido es público, puedes compartirlo libremente con quien le pueda interesar. Si quieres recibir directamente futuros ensayos, puedes deja tu correo electrónico a continuación.</em></p>
             
-            <iframe src="https://innerfoundation.substack.com/embed" style="background:white; display: block; margin: 0 auto;" frameborder="0" scrolling="no"></iframe>
+            <iframe id="substack-iframe" src="https://innerfoundation.substack.com/embed" style="display: block; margin: 0 auto;" frameborder="0" scrolling="no"></iframe>
         </main>
 
         <footer>
@@ -173,30 +173,41 @@
             const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             document.body.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
+            updateIframeBackground(newTheme);
         }
-
+        
         // Get system color scheme preference
         function getSystemTheme() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
-
+        
+        // Update iframe background based on theme
+        function updateIframeBackground(theme) {
+            const iframe = document.getElementById('substack-iframe');
+            if (iframe) {
+                iframe.style.background = theme === 'dark' ? '#1a1a1a' : 'white';
+            }
+        }
+        
         // Check theme on page load
         document.addEventListener('DOMContentLoaded', function() {
             // Use saved theme if exists, otherwise use system preference
             const savedTheme = localStorage.getItem('theme');
             const theme = savedTheme || getSystemTheme();
             document.body.setAttribute('data-theme', theme);
+            updateIframeBackground(theme);
         });
-
+        
         // Listen for system theme changes
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
             // Only update if user hasn't manually set a theme
             if (!localStorage.getItem('theme')) {
                 const newTheme = e.matches ? 'dark' : 'light';
                 document.body.setAttribute('data-theme', newTheme);
+                updateIframeBackground(newTheme);
             }
         });
-
+        
         // Create the sunburst rays
         const raysContainer = document.querySelector('.rays-container');
         for (let i = 0; i < 24; i++) {
@@ -206,5 +217,6 @@
             raysContainer.appendChild(line);
         }
     </script>
+    
 </body>
 </html>
