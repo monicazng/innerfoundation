@@ -61,15 +61,15 @@
                 <p class="testimonial-quote">"Highest ROI investment." —Daniel </p>
                 <p class="testimonial-quote">“I can't imagine getting this far, this fast without Monica's support.” —Ale </p>
                 <p class="testimonial-quote">"Monica became an indispensable companion." —Brett </p>
-                <a href="./testimonials.html"">Read all testimonials<span>&#x2192;</span></a>
+                <a href="./testimonials.html">Read all testimonials<span>&#x2192;</span></a>
             </div>
 
             <div class="section">
                 <a href="https://tally.so/r/Pd9eAb" class="primary-link">Request an intro<span>&#x2192;</span></a>
             </div>
             
-            <p>We write about the psychological and virtuous dimensions of leadership. Read on <a href="https://innerfoundation.substack.com" class="primary-link">Substack</a> or subscribe below.</p>
-            <iframe src="https://innerfoundation.substack.com/embed" style="background: var(--background); display: block; margin: 0 auto;" frameborder="0" scrolling="no"></iframe>
+            <p>We write essays exploring the personal, social, and virtuous dimensions of leadership as an extension of our coaching practice. Read them on <a href="https://innerfoundation.substack.com" class="primary-link">Substack</a> or subscribe below. </p>
+            <iframe id="substack-iframe" src="https://innerfoundation.substack.com/embed" style="display: block; margin: 0 auto;" frameborder="0" scrolling="no"></iframe>
             
         </main>
 
@@ -91,11 +91,20 @@
             const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             document.body.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
+            updateIframeBackground(newTheme);
         }
 
         // Get system color scheme preference
         function getSystemTheme() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        
+        // Update iframe background based on theme
+        function updateIframeBackground(theme) {
+            const iframe = document.getElementById('substack-iframe');
+            if (iframe) {
+                iframe.style.background = theme === 'dark' ? '#1a1a1a' : 'white';
+            }
         }
 
         // Check theme on page load
@@ -104,6 +113,7 @@
             const savedTheme = localStorage.getItem('theme');
             const theme = savedTheme || getSystemTheme();
             document.body.setAttribute('data-theme', theme);
+            updateIframeBackground(theme);
         });
 
         // Listen for system theme changes
@@ -112,9 +122,10 @@
             if (!localStorage.getItem('theme')) {
                 const newTheme = e.matches ? 'dark' : 'light';
                 document.body.setAttribute('data-theme', newTheme);
+                updateIframeBackground(newTheme);
             }
         });
-
+        
         // Create the sunburst rays
         const raysContainer = document.querySelector('.rays-container');
         for (let i = 0; i < 24; i++) {
