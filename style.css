@@ -242,6 +242,87 @@ a {
     margin-bottom: var(--spacing);
 }
 
+/* Testimonials Grid - Masonry Layout */
+.testimonials-grid {
+    column-count: 2;
+    column-gap: var(--spacing);
+    margin-bottom: var(--spacing);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+.testimonial-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme="light"] .testimonial-card {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-2px);
+}
+
+.testimonial-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-family: 'Garamond', serif;
+    color: var(--text);
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing);
+    color: var(--text);
+}
+
+.testimonial-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: var(--spacing) 0;
+    width: 100%;
+}
+
+[data-theme="light"] .testimonial-divider {
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author {
+    margin-top: var(--spacing);
+}
+
+.author-info {
+    width: 100%;
+}
+
+.author-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+}
+
+.author-title {
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.7;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
 .column {
     flex: 1;
 }
@@ -255,7 +336,28 @@ footer {
     margin-bottom: var(--spacing);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .nav-right {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .testimonials-grid {
+        column-count: 1;
+    }
+    
+    .testimonial-card {
+        padding: calc(var(--spacing) * 0.75);
+    }
+    
     .column {
         flex: 100%;
     }
