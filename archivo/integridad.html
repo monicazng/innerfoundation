@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Monica Zeng">
 
-    <title>Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto</title>
-    <meta name="title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta name="description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta name="keywords" content="founder coaching, crypto founders, coaching, leadership, leadership development, career">
-     
+    <title>Crisis de Integridad — Inner Foundation</title>
+    <meta name="description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Inner Foundation">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://inner.foundation/archivo/integridad.html">
+    <meta property="og:title" content="Crisis de Integridad — Inner Foundation">
+    <meta property="og:description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
+    <meta property="og:image" content="https://inner.foundation/assets/summary_large_image.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="535">
+    <meta property="og:image:alt" content="Crisis de Integridad — ensayo de Monica Zeng sobre liderazgo e integridad en la frontera tecnológica">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://inner.foundation/">
-    <meta property="twitter:title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta property="twitter:description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@monicazng">
+    <meta name="twitter:url" content="https://inner.foundation/archivo/integridad.html">
+    <meta name="twitter:title" content="Crisis de Integridad — Inner Foundation">
+    <meta name="twitter:description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
+    <meta name="twitter:image" content="https://inner.foundation/assets/summary_large_image.png">
+    <meta name="twitter:image:alt" content="Crisis de Integridad — ensayo de Monica Zeng sobre liderazgo e integridad en la frontera tecnológica">
 
-    <link rel="icon" href="/assets/favicon-color.png">
-    <link rel="canonical" href="https://inner.foundation/">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://inner.foundation/#website",
+                "url": "https://inner.foundation/",
+                "name": "Inner Foundation"
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://inner.foundation/#organization",
+                "name": "Inner Foundation",
+                "url": "https://inner.foundation/"
+            },
+            {
+                "@type": "Article",
+                "headline": "Crisis de Integridad",
+                "description": "Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión.",
+                "inLanguage": "es",
+                "datePublished": "2025-04-03",
+                "author": { "@type": "Person", "name": "Monica Zeng" },
+                "publisher": { "@id": "https://inner.foundation/#organization" },
+                "mainEntityOfPage": "https://inner.foundation/archivo/integridad.html",
+                "image": "https://inner.foundation/assets/summary_large_image.png"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Inner Foundation", "item": "https://inner.foundation/" },
+                    { "@type": "ListItem", "position": 2, "name": "Archivo", "item": "https://inner.foundation/archivo.html" },
+                    { "@type": "ListItem", "position": 3, "name": "Crisis de Integridad", "item": "https://inner.foundation/archivo/integridad.html" }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <link rel="icon" href="/assets/favicon.png">
+    <link rel="canonical" href="https://inner.foundation/archivo/integridad.html">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -33,19 +87,24 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="../index.html#praxis">Praxis</a>
-                    <a href="../index.html#about">About</a>
-                    <a href="../index.html#manifesto">Manifesto</a>
+                <div id="site-nav-panel" class="nav-menu-panel">
+                    <div class="nav-links">
+                        <a href="/#praxis">Praxis</a>
+                        <a href="/#about">About</a>
+                        <a href="/manifesto.html">Manifesto</a>
+                    </div>
                 </div>
-                <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
-                <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                <div class="nav-actions">
+                    <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Open menu">MENU</button>
+                    <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
+                    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                </div>
             </div>
         </nav>
 
-        <header class="article-header">
-            <a href="/archivo.html" class="hero-label">Archivo</a>
-            <h2 class="section-title">Crisis de Integridad</h2>
+        <header class="page-header">
+            <a href="/archivo.html" class="eyebrow">Archivo</a>
+            <h1 class="section-title">Crisis de Integridad</h1>
         </header>
 
         <main>
@@ -151,14 +210,14 @@
 
             <p><em>Gracias a Alberto, Álvaro y Jorge por leer los primeros borradores.</em></p>
 
-            <p class="essay-byline">Por Monica Zeng a 03.04.2025</p>
+            <p class="byline">Por Monica Zeng a 03.04.2025</p>
 
-            <div class="section-divider"></div>
+            <div class="divider"></div>
 
-            <p class="substack-embed-intro"><em>Gracias por leer este ensayo. Este contenido es público, puedes compartirlo libremente con quien le pueda interesar. Si quieres recibir directamente futuros ensayos, puedes dejar tu correo electrónico a continuación.</em></p>
+            <p class="embed-intro"><em>Gracias por leer este ensayo. Este contenido es público, puedes compartirlo libremente con quien le pueda interesar. Si quieres recibir directamente futuros ensayos, puedes dejar tu correo electrónico a continuación.</em></p>
 
-            <div class="substack-embed-wrap">
-                <iframe id="substack-embed" class="substack-embed" src="https://innerfoundation.substack.com/embed?transparent=1" width="480" height="150" frameborder="0" scrolling="no"></iframe>
+            <div class="embed">
+                <iframe id="substack-embed" src="https://innerfoundation.substack.com/embed?transparent=1" width="480" height="150" frameborder="0" scrolling="no"></iframe>
             </div>
         </main>
 
@@ -178,55 +237,7 @@
         </footer>
     </div>
 
-    <script>
-        // Theme toggle functionality
-        const SUBSTACK_DARK = 'https://innerfoundation.substack.com/embed?transparent=1';
-        const SUBSTACK_LIGHT = 'https://innerfoundation.substack.com/embed?transparent=1&light=1';
-
-        function updateSubstackEmbed(theme) {
-            const embed = document.getElementById('substack-embed');
-            if (embed) embed.src = theme === 'light' ? SUBSTACK_LIGHT : SUBSTACK_DARK;
-        }
-
-        function toggleTheme() {
-            const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            document.body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateSubstackEmbed(newTheme);
-        }
-
-        // Get system color scheme preference
-        function getSystemTheme() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-
-        // Check theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme');
-            const theme = savedTheme || getSystemTheme();
-            document.body.setAttribute('data-theme', theme);
-            updateSubstackEmbed(theme);
-        });
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                document.body.setAttribute('data-theme', newTheme);
-                updateSubstackEmbed(newTheme);
-            }
-        });
-        
-        // Create the sunburst rays
-        document.querySelectorAll('.rays-container').forEach(raysContainer => {
-            for (let i = 0; i < 24; i++) {
-                const line = document.createElement('div');
-                line.className = 'line';
-                line.style.transform = `translate(-0%, -50%) rotate(${i * 15}deg)`;
-                raysContainer.appendChild(line);
-            }
-        });
-    </script>
+    <script src="/site.js" defer></script>
     
 </body>
 </html>

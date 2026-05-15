@@ -3,22 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Monica Zeng">
 
-    <title>Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto</title>
-    <meta name="title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta name="description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta name="keywords" content="founder coaching, crypto founders, coaching, leadership, leadership development, career">
-     
+    <title>Inner Foundation — Coaching Humans at the Frontier</title>
+    <meta name="description" content="8 years of 1:1 coaching for founders and engineers. Psychology, leadership, and performance work at depth.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Inner Foundation">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://inner.foundation/">
+    <meta property="og:title" content="Inner Foundation — Coaching Humans at the Frontier">
+    <meta property="og:description" content="8 years of 1:1 coaching for founders and engineers. Psychology, leadership, and performance work at depth.">
+    <meta property="og:image" content="https://inner.foundation/assets/summary_large_image.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="535">
+    <meta property="og:image:alt" content="Inner Foundation — coaching for founders and engineers at the frontier">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://inner.foundation/">
-    <meta property="twitter:title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta property="twitter:description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@monicazng">
+    <meta name="twitter:url" content="https://inner.foundation/">
+    <meta name="twitter:title" content="Inner Foundation — Coaching Humans at the Frontier">
+    <meta name="twitter:description" content="8 years of 1:1 coaching for founders, engineers, and technical leaders. Psychology, leadership, and performance work at depth.">
+    <meta name="twitter:image" content="https://inner.foundation/assets/summary_large_image.png">
+    <meta name="twitter:image:alt" content="Inner Foundation — coaching for founders and engineers at the frontier">
 
-    <link rel="icon" href="./assets/favicon-color.png">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://inner.foundation/#website",
+                "url": "https://inner.foundation/",
+                "name": "Inner Foundation",
+                "publisher": { "@id": "https://inner.foundation/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://inner.foundation/#organization",
+                "name": "Inner Foundation",
+                "url": "https://inner.foundation/",
+                "sameAs": [
+                    "https://x.com/monicazng",
+                    "https://t.me/monicazng",
+                    "https://innerfoundation.substack.com"
+                ],
+                "founder": {
+                    "@type": "Person",
+                    "name": "Monica Zeng",
+                    "jobTitle": "Founder & Coach"
+                }
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://inner.foundation/#service",
+                "name": "Inner Foundation",
+                "description": "1:1 coaching for founders and engineers",
+                "url": "https://inner.foundation/",
+                "provider": { "@id": "https://inner.foundation/#organization" },
+                "areaServed": "Worldwide",
+                "serviceType": "Executive Coaching"
+            }
+        ]
+    }
+    </script>
+
+    <link rel="icon" href="/assets/favicon.png">
     <link rel="canonical" href="https://inner.foundation/">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="container">
@@ -33,22 +89,27 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="#praxis">Praxis</a>
-                    <a href="#about">About</a>
-                    <a href="#manifesto">Manifesto</a>
+                <div id="site-nav-panel" class="nav-menu-panel">
+                    <div class="nav-links">
+                        <a href="#praxis">Praxis</a>
+                        <a href="#about">About</a>
+                        <a href="#manifesto">Manifesto</a>
+                    </div>
                 </div>
-                <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
-                <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                <div class="nav-actions">
+                    <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Open menu">MENU</button>
+                    <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
+                    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                </div>
             </div>
         </nav>
 
         <header class="hero">
-            <span class="hero-label">8 years coaching humans at the frontier</span>
+            <span class="eyebrow">8 years coaching humans at the frontier</span>
             <h1>Where your vision challenges your growth, and <em>your growth</em> realizes your vision</h1>
-            <div class="header-footnote">
-                <p>"Moni is wise, helps you focus on what matters and work through the many challenges of the hectic startup life."</p>
-                <cite>— Manu Araoz, Co-founder OpenZeppelin, Partner BUZHI</cite>
+            <div class="quote-block">
+                <p>"Moni helped me through tough moments of building as a founder, things you can't really talk about with anyone else. Now I brought her in to work with my team. She has an innate intuition for human behavior and performance."</p>
+                <cite class="meta">— Jorge Izquierdo, Thiel Fellow / Co-founder Tuyo</cite>
             </div>
             <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--hero">Get an intro →</a>
             <span class="scroll-hint">↓</span>
@@ -58,95 +119,100 @@
 
             <h2 class="section-title" id="praxis">Praxis</h2>
 
-            <div class="praxis-grid">
-                <div class="praxis-text">
+            <div class="grid-2">
+                <div class="prose">
                     <p class="drop-cap">The quality of your work depends on the quality of your foundations. We help you raise them.</p>
                     <p>The highest form of development has always been one mind sharpening another through direct and personal work.</p>
                 </div>
-                <div class="praxis-text">
-                    <p>We work on your mental patterns, the mechanics of why you're stuck, the architecture of how you operate, why it breaks down, and how to rebuild it.</p>
-                    <p>With the goal of helping you think clearly, act decisively, communicate effectively, and lead with conviction.</p>
+                <div class="prose">
+                    <p>We work on your psychological patterns, the mechanics of why you're stuck, the architecture of how you operate, why it breaks down, and how to rebuild it.</p>
+                    <p>To help you think clearly, act decisively, communicate effectively, and lead with conviction.</p>
                 </div>
             </div>
 
-            <div class="services-section">
-                <div class="service-item">
-                    <span class="service-label">For individuals</span>
+            <div class="row">
+                <div class="stack">
+                    <span class="eyebrow eyebrow--sm">For individuals</span>
                     <p>Biweekly 1:1 sessions for founders, leaders, and high-potential professionals.</p>
                 </div>
-                <div class="service-item">
-                    <span class="service-label">For organizations</span>
+                <div class="stack">
+                    <span class="eyebrow eyebrow--sm">For organizations</span>
                     <p>Three-month 1:1 development process for high-talent, high-potential contributors.</p>
                 </div>
             </div>
 
             <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--block">Get an intro →</a>
 
-            <div class="stories">
+            <section class="section section--tight">
                 <h2 class="section-title">Testimony</h2>
-                <div class="testimony-grid">
-                    <div class="testimony-item">
+                <div class="grid-2">
+                    <div class="quote-item">
                         <p>I can't imagine getting this far, this fast without Moni's support.</p>
-                        <cite>Ale, Founder / Head of Product</cite>
+                        <cite class="meta">Ale, Founder / Head of Product</cite>
                     </div>
-                    <div class="testimony-item">
-                        <p>The impact is so clear that now I brought her in to work with my team.</p>
-                        <cite>Jorge, Thiel Fellow / Co-founder Tuyo</cite>
+                    <div class="quote-item">
+                        <p>Moni helped me focus on what matters and work through the many challenges of the hectic startup life.</p>
+                        <cite class="meta">Manu Araoz, Co-founder OpenZeppelin, Partner BUZHI</cite>
                     </div>
-                    <div class="testimony-item">
+                    <div class="quote-item">
                         <p>The practices I learned with her are tools I still use today. This isn't a one-time experience, it's something you carry with you for the rest of your life.</p>
-                        <cite>Facu, Co-founder &amp; CTO MimicFi</cite>
+                        <cite class="meta">Facu, Co-founder &amp; CTO MimicFi</cite>
                     </div>
-                    <div class="testimony-item">
+                    <div class="quote-item">
                         <p>Coaching with Monica is probably the action with the most mid-term ROI for organizations and yourself as an executive.</p>
-                        <cite>Daniel, Angel Investor / Serial Founder</cite>
+                        <cite class="meta">Daniel, Angel Investor / Serial Founder</cite>
                     </div>
-                    <div class="testimony-item">
+                    <div class="quote-item">
                         <p>Moni became an indispensable companion, someone to trust, challenge, be challenged, and reflect from another perspective.</p>
-                        <cite>Brett, former CTO Aragon / VC Partner</cite>
+                        <cite class="meta">Brett, former CTO Aragon / VC Partner</cite>
                     </div>
-                    <div class="testimony-item">
+                    <div class="quote-item">
                         <p>More than a coach, a trusted person and an invaluable business advisor.</p>
-                        <cite>Sara, Head of UX / Founder</cite>
+                        <cite class="meta">Sara, Head of UX / Founder</cite>
                     </div>
                 </div>
-                <a href="./testimonials.html" class="nav-cta nav-cta--block">Read their full testimony →</a>
-            </div>
+                <a href="/testimonials.html" class="nav-cta nav-cta--block">Read their full testimony →</a>
+            </section>
 
-            <div class="section-divider"></div>
+            <div class="divider"></div>
 
             <h2 class="section-title" id="about">About</h2>
 
-            <div class="about-grid">
-                <div class="about-photo"></div>
-                <div class="about-text">
+            <div class="grid-2">
+                <div class="media-col">
+                    <div class="media-frame">
+                        <img src="/assets/about-portrait.png" width="900" height="1200" alt="Monica Zeng, founder and coach at Inner Foundation" loading="lazy" decoding="async">
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=jRs0Zo_FN0g" class="eyebrow">Devconnect 2025 talk: Engineer to founder, building beyond code →</a>
+                </div>
+                <div class="prose">
                     <p class="drop-cap">I'm Monica, the founder and coach at Inner Foundation. I've been in crypto since 2017, where I co-founded Firm and held leadership and consulting roles at some of Ethereum's foundational projects: Status, Aragon, and OpenZeppelin.</p>
                     <p>But my most meaningful work came from helping founders and engineers develop as leaders. Through hundreds of hours of coaching, I've witnessed how they carried insane responsibility, built companies, became better CTOs, found purpose again, and made extraordinary career shifts.</p>
                     <p>That's why Inner Foundation exists.</p>
                 </div>
             </div>
 
-            <div class="trusted-block">
-                <p class="trusted-line1">Trusted by founders and engineers building frontier technologies</p>
-                <p class="trusted-line2">Tuyo &nbsp;·&nbsp; Consensys &nbsp;·&nbsp; Dappnode &nbsp;·&nbsp; Karma &nbsp;·&nbsp; Aragon &nbsp;·&nbsp; Synthetix &nbsp;·&nbsp; OpenZeppelin &nbsp;·&nbsp; POKT Network</p>
+            <div class="center-block center">
+                <p class="lede">Trusted by founders and engineers building frontier technologies</p>
+                <p class="eyebrow eyebrow--wide">Tuyo &nbsp;·&nbsp; Consensys &nbsp;·&nbsp; Dappnode &nbsp;·&nbsp; Karma &nbsp;·&nbsp; Aragon &nbsp;·&nbsp; Synthetix &nbsp;·&nbsp; OpenZeppelin &nbsp;·&nbsp; POKT Network</p>
             </div>
 
             <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--block">Get an intro →</a>
 
-            <div class="section-divider"></div>
+            <div class="divider"></div>
 
             <!-- Manifesto -->
-            <div class="manifesto-section">
-                <span class="manifesto-eyebrow" id="manifesto">The Inner Foundation Manifesto</span>
-                <h2 class="manifesto-heading">Redefining Leadership<br>for the Internet Renaissance</h2>
-                <div class="manifesto-columns">
-                    <div class="manifesto-col">
+            <section class="section section--pad" id="manifesto">
+                <span class="eyebrow">The Inner Foundation Manifesto</span>
+                <h2 class="title-lg">Redefining Leadership<br>for the Internet Renaissance</h2>
+                <div class="grid-2">
+                    <div class="prose">
                         <p class="drop-cap">Before us stands a unique opportunity. Tools our parents saw as science fiction now extend our health, wealth, and wisdom. In our hands lie technologies that multiply our leverage and amplify our impact. Capable individuals possess an unprecedented force to shape our millennium.</p>
                         <p>However, great minds are under siege.</p>
                         <p>Where leaders of the past had space to think clearly and build persistently, we find ourselves driven by systems of consumption, control, and surveillance. These pervasive structures divert our intellectual energy toward coping and complying. As a result, we're losing great minds to superfluous pursuits.</p>
                         <p>Our greatest challenge isn't technical – it's maintaining our integrity and creativity in an environment that rewards neither.</p>
                     </div>
-                    <div class="manifesto-col">
+                    <div class="prose">
                         <p>To lead humankind toward a free, open, and prosperous society requires more than will – it demands foundation.</p>
                         <p>History illuminates the path. We're heirs to a legacy of leaders who built nations, connected continents, and ended diseases. They had something we must reclaim: the space to forge themselves with the character and competence their vision demanded.</p>
                         <p>Thus, Inner Foundation is a space for leadership development. A commitment to individuals of integrity, with the courage to confront adversity, and the perseverance to cultivate their greatest selves at the forefront of technological innovation.</p>
@@ -154,35 +220,35 @@
                         <p>To the leaders of our millennium.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--block nav-cta--block-spaced-top">Get an intro →</a>
+            <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--block nav-cta--spaced-top">Get an intro →</a>
 
-            <div class="section-divider"></div>
+            <div class="divider"></div>
 
             <h2 class="section-title">Writings</h2>
 
-            <div class="essays-grid">
-                <div class="essay-item">
-                    <p class="essay-desc">The reason why so many great builders end up creating things they don't actually believe in</p>
-                    <a href="#" class="essay-link">The integrity crisis &#x2192;</a>
+            <div class="grid-2 grid-2--sm">
+                <div class="stack">
+                    <p class="card-desc">The reason why so many great builders end up creating things they don't actually believe in</p>
+                    <a href="/archivo/integridad.html" class="card-link">Crisis de integridad (español) &#x2192;</a>
                 </div>
 
-                <div class="essay-item">
-                    <p class="essay-desc">Why the smarter you are, the better you procrastinate and a pragmatic way out</p>
-                    <a href="#" class="essay-link">Pragmatic procrastination &#x2192;</a>
+                <div class="stack">
+                    <p class="card-desc">Why the smarter you are, the better you procrastinate and a pragmatic way out</p>
+                    <a href="https://innerfoundation.substack.com/p/procrastination" class="card-link" rel="noopener noreferrer">Pragmatic procrastination (Substack) &#x2192;</a>
                 </div>
             </div>
 
-            <div class="substack-embed-wrap">
-                <iframe id="substack-embed" class="substack-embed" src="https://innerfoundation.substack.com/embed?transparent=1" width="480" height="150" frameborder="0" scrolling="no"></iframe>
+            <div class="embed">
+                <iframe id="substack-embed" src="https://innerfoundation.substack.com/embed?transparent=1" width="480" height="150" frameborder="0" scrolling="no"></iframe>
             </div>
 
-            <div class="section-divider"></div>
+            <div class="divider"></div>
 
-            <div class="closing-section">
-                <h1>To the leaders of our millennium</h1>
-            </div>
+            <section class="section section--closing">
+                <p class="title-lg">To the leaders of our millennium</p>
+            </section>
 
         </main>
 
@@ -202,54 +268,6 @@
         </footer>
     </div>
 
-    <script>
-        // Theme toggle functionality
-        const SUBSTACK_DARK = 'https://innerfoundation.substack.com/embed?transparent=1';
-        const SUBSTACK_LIGHT = 'https://innerfoundation.substack.com/embed?transparent=1&light=1';
-
-        function updateSubstackEmbed(theme) {
-            const embed = document.getElementById('substack-embed');
-            if (embed) embed.src = theme === 'light' ? SUBSTACK_LIGHT : SUBSTACK_DARK;
-        }
-
-        function toggleTheme() {
-            const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            document.body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateSubstackEmbed(newTheme);
-        }
-
-        // Get system color scheme preference
-        function getSystemTheme() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-
-        // Check theme on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme');
-            const theme = savedTheme || getSystemTheme();
-            document.body.setAttribute('data-theme', theme);
-            updateSubstackEmbed(theme);
-        });
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                document.body.setAttribute('data-theme', newTheme);
-                updateSubstackEmbed(newTheme);
-            }
-        });
-        
-        // Create the sunburst rays
-        document.querySelectorAll('.rays-container').forEach(raysContainer => {
-            for (let i = 0; i < 24; i++) {
-                const line = document.createElement('div');
-                line.className = 'line';
-                line.style.transform = `translate(-0%, -50%) rotate(${i * 15}deg)`;
-                raysContainer.appendChild(line);
-            }
-        });
-    </script>
+    <script src="/site.js" defer></script>
 </body>
 </html>
