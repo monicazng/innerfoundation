@@ -14,12 +14,13 @@
     }
 
     function setTheme(theme) {
-        document.body.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-theme', theme);
         updateSubstack(theme);
     }
 
     window.toggleTheme = function () {
-        const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
         setTheme(next);
         localStorage.setItem('theme', next);
     };

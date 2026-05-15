@@ -16,9 +16,13 @@
     --label-track: 0.12em;
 }
 
-[data-theme="light"] {
+html[data-theme="light"] {
     --bg: #f5f1f1;
     --text: #0e0e0e;
+    --line: color-mix(in srgb, var(--text) 12%, transparent);
+    --text-muted: color-mix(in srgb, var(--text) 55%, transparent);
+    --text-dim: color-mix(in srgb, var(--text) 42%, transparent);
+    --accent-muted: color-mix(in srgb, var(--accent) 75%, transparent);
 }
 
 /* ── Reset & base ── */
@@ -350,8 +354,8 @@ nav {
 
 .theme-toggle::after { content: "☾"; }
 .theme-toggle:hover::after { content: "✺"; }
-[data-theme="light"] .theme-toggle::after { content: "✺"; }
-[data-theme="light"] .theme-toggle:hover::after { content: "☾"; }
+html[data-theme="light"] .theme-toggle::after { content: "✺"; }
+html[data-theme="light"] .theme-toggle:hover::after { content: "☾"; }
 
 /* ── Page header (hero + inner pages) ── */
 header { position: relative; padding: var(--space) 0; }
