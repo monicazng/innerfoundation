@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Monica Zeng">
 
-    <title>Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto</title>
-    <meta name="title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta name="description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta name="keywords" content="founder coaching, crypto founders, coaching, leadership, leadership development, career">
-     
+    <title>Manifesto — Inner Foundation</title>
+    <meta name="description" content="Redefining leadership for the Internet Renaissance. The Inner Foundation manifesto on integrity, vision, and human development at the frontier.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inner.foundation/manifesto.html">
+    <meta property="og:title" content="Manifesto — Inner Foundation">
+    <meta property="og:description" content="Redefining leadership for the Internet Renaissance. The Inner Foundation manifesto on integrity, vision, and human development at the frontier.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://inner.foundation/">
-    <meta property="twitter:title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta property="twitter:description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image_intro.png">
+    <meta property="twitter:url" content="https://inner.foundation/manifesto.html">
+    <meta property="twitter:title" content="Manifesto — Inner Foundation">
+    <meta property="twitter:description" content="Redefining leadership for the Internet Renaissance. The Inner Foundation manifesto on integrity, vision, and human development at the frontier.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
 
-    <link rel="icon" href="./assets/favicon-color.png">
-    <link rel="canonical" href="https://inner.foundation/">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Inner Foundation",
+        "description": "1:1 coaching for founders and engineers",
+        "url": "https://inner.foundation",
+        "founder": {
+            "@type": "Person",
+            "name": "Monica Zeng",
+            "jobTitle": "Founder & Coach"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": "Executive Coaching"
+    }
+    </script>
+
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="canonical" href="https://inner.foundation/manifesto.html">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,13 +58,18 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="./index.html#praxis">Praxis</a>
-                    <a href="./index.html#about">About</a>
-                    <a href="#manifesto">Manifesto</a>
+                <div id="site-nav-panel" class="nav-menu-panel">
+                    <div class="nav-links">
+                        <a href="./index.html#praxis">Praxis</a>
+                        <a href="./index.html#about">About</a>
+                        <a href="#manifesto">Manifesto</a>
+                    </div>
                 </div>
-                <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
-                <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                <div class="nav-actions">
+                    <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Open menu">MENU</button>
+                    <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
+                    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                </div>
             </div>
         </nav>
 
@@ -81,6 +111,7 @@
         </footer>
     </div>
 
+    <script src="./nav-menu.js"></script>
     <script>
         // Theme toggle functionality
         function toggleTheme() {

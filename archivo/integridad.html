@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Monica Zeng">
 
-    <title>Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto</title>
-    <meta name="title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta name="description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta name="keywords" content="founder coaching, crypto founders, coaching, leadership, leadership development, career">
-     
+    <title>Crisis de Integridad — Inner Foundation</title>
+    <meta name="description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inner.foundation/archivo/integridad.html">
+    <meta property="og:title" content="Crisis de Integridad — Inner Foundation">
+    <meta property="og:description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://inner.foundation/">
-    <meta property="twitter:title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta property="twitter:description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
+    <meta property="twitter:url" content="https://inner.foundation/archivo/integridad.html">
+    <meta property="twitter:title" content="Crisis de Integridad — Inner Foundation">
+    <meta property="twitter:description" content="Ensayo sobre la crisis de integridad en el liderazgo y en cripto: cuándo la visión choca con la realidad, y cómo cruzar el punto de inflexión. Por Monica Zeng.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
 
-    <link rel="icon" href="/assets/favicon-color.png">
-    <link rel="canonical" href="https://inner.foundation/">
-    <link rel="stylesheet" href="/style.css">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Inner Foundation",
+        "description": "1:1 coaching for founders and engineers",
+        "url": "https://inner.foundation",
+        "founder": {
+            "@type": "Person",
+            "name": "Monica Zeng",
+            "jobTitle": "Founder & Coach"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": "Executive Coaching"
+    }
+    </script>
+
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="canonical" href="https://inner.foundation/archivo/integridad.html">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="container">
@@ -33,13 +58,18 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="../index.html#praxis">Praxis</a>
-                    <a href="../index.html#about">About</a>
-                    <a href="../index.html#manifesto">Manifesto</a>
+                <div id="site-nav-panel" class="nav-menu-panel">
+                    <div class="nav-links">
+                        <a href="../index.html#praxis">Praxis</a>
+                        <a href="../index.html#about">About</a>
+                        <a href="../index.html#manifesto">Manifesto</a>
+                    </div>
                 </div>
-                <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
-                <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                <div class="nav-actions">
+                    <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Open menu">MENU</button>
+                    <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
+                    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                </div>
             </div>
         </nav>
 
@@ -178,6 +208,7 @@
         </footer>
     </div>
 
+    <script src="../nav-menu.js"></script>
     <script>
         // Theme toggle functionality
         const SUBSTACK_DARK = 'https://innerfoundation.substack.com/embed?transparent=1';

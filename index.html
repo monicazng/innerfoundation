@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Monica Zeng">
 
-    <title>Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto</title>
-    <meta name="title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta name="description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
-    <meta name="keywords" content="founder coaching, crypto founders, coaching, leadership, leadership development, career">
-     
+    <title>Inner Foundation — Coaching Humans at the Frontier</title>
+    <meta name="description" content="8 years of 1:1 coaching for founders and engineers. Psychology, leadership, and performance work at depth.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inner.foundation/">
+    <meta property="og:title" content="Inner Foundation — Coaching Humans at the Frontier">
+    <meta property="og:description" content="8 years of 1:1 coaching for founders and engineers. Psychology, leadership, and performance work at depth.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://inner.foundation/">
-    <meta property="twitter:title" content="Inner Foundation: 1-on-1 Coaching for Founders & Engineers in Crypto">
-    <meta property="twitter:description" content="Building leaders, accelerating careers. Build emotional, personal, and operational excellence with proven coaching techniques, practical psychology, and systems thinking.">
+    <meta property="twitter:title" content="Inner Foundation — Coaching Humans at the Frontier">
+    <meta property="twitter:description" content="8 years of 1:1 coaching for founders, engineers, and technical leaders. Psychology, leadership, and performance work at depth.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/monicazng/innerfoundation/refs/heads/master/assets/summary_large_image.png">
 
-    <link rel="icon" href="./assets/favicon-color.png">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Inner Foundation",
+        "description": "1:1 coaching for founders and engineers",
+        "url": "https://inner.foundation",
+        "founder": {
+            "@type": "Person",
+            "name": "Monica Zeng",
+            "jobTitle": "Founder & Coach"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": "Executive Coaching"
+    }
+    </script>
+
+    <link rel="icon" href="./assets/favicon.png">
     <link rel="canonical" href="https://inner.foundation/">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,13 +58,18 @@
                 <span class="logo-text">Inner Foundation</span>
             </a>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="#praxis">Praxis</a>
-                    <a href="#about">About</a>
-                    <a href="#manifesto">Manifesto</a>
+                <div id="site-nav-panel" class="nav-menu-panel">
+                    <div class="nav-links">
+                        <a href="#praxis">Praxis</a>
+                        <a href="#about">About</a>
+                        <a href="#manifesto">Manifesto</a>
+                    </div>
                 </div>
-                <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
-                <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                <div class="nav-actions">
+                    <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Open menu">MENU</button>
+                    <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta">Get an intro →</a>
+                    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+                </div>
             </div>
         </nav>
 
@@ -47,8 +77,8 @@
             <span class="hero-label">8 years coaching humans at the frontier</span>
             <h1>Where your vision challenges your growth, and <em>your growth</em> realizes your vision</h1>
             <div class="header-footnote">
-                <p>"Moni is wise, helps you focus on what matters and work through the many challenges of the hectic startup life."</p>
-                <cite>— Manu Araoz, Co-founder OpenZeppelin, Partner BUZHI</cite>
+                <p>"Moni helped me through tough moments of building as a founder, things you can't really talk about with anyone else. She has an innate intuition for human behavior and performance. The impact is so clear that now I brought her in to work with my team."</p>
+                <cite>— Jorge Izquierdo, Thiel Fellow / Co-founder Tuyo, Aragon</cite>
             </div>
             <a href="https://calendar.proton.me/bookings#c-nhjuXccZ0yTFfM03cIgoP5WE2PSUYTQ2clb5-M_vE=" class="nav-cta nav-cta--hero">Get an intro →</a>
             <span class="scroll-hint">↓</span>
@@ -90,8 +120,8 @@
                         <cite>Ale, Founder / Head of Product</cite>
                     </div>
                     <div class="testimony-item">
-                        <p>The impact is so clear that now I brought her in to work with my team.</p>
-                        <cite>Jorge, Thiel Fellow / Co-founder Tuyo</cite>
+                        <p>Moni helped me focus on what matters and work through the many challenges of the hectic startup life.</p>
+                        <cite>Manu Araoz, Co-founder OpenZeppelin, Partner BUZHI</cite>
                     </div>
                     <div class="testimony-item">
                         <p>The practices I learned with her are tools I still use today. This isn't a one-time experience, it's something you carry with you for the rest of your life.</p>
@@ -118,7 +148,12 @@
             <h2 class="section-title" id="about">About</h2>
 
             <div class="about-grid">
-                <div class="about-photo"></div>
+                <div class="about-photo-col">
+                    <div class="about-photo-wrap">
+                        <img class="about-photo" src="./assets/about-portrait.png" width="900" height="1200" alt="Monica Zeng, founder and coach at Inner Foundation" loading="lazy" decoding="async">
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=jRs0Zo_FN0g" class="hero-label about-talk-link">Devconnect 2025 talk: Engineer to founder, building beyond code →</a>
+                </div>
                 <div class="about-text">
                     <p class="drop-cap">I'm Monica, the founder and coach at Inner Foundation. I've been in crypto since 2017, where I co-founded Firm and held leadership and consulting roles at some of Ethereum's foundational projects: Status, Aragon, and OpenZeppelin.</p>
                     <p>But my most meaningful work came from helping founders and engineers develop as leaders. Through hundreds of hours of coaching, I've witnessed how they carried insane responsibility, built companies, became better CTOs, found purpose again, and made extraordinary career shifts.</p>
@@ -202,6 +237,7 @@
         </footer>
     </div>
 
+    <script src="./nav-menu.js"></script>
     <script>
         // Theme toggle functionality
         const SUBSTACK_DARK = 'https://innerfoundation.substack.com/embed?transparent=1';
